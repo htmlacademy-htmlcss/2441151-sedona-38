@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vasiliy Ryabinin](https://up.htmlacademy.ru/htmlcss/38/user/2441151).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
