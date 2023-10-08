@@ -58,7 +58,7 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/">
+                <a href="/" aria-label="На главную">
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                     <path
                       d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
@@ -137,8 +137,8 @@
               <span class="input-text-right">До</span>
             </label>
             <div class="ranges">
-              <input type="range" id="startRange" min="0" max="10000" value="0">
-              <input type="range" id="endRange" min="0" max="10000" value="10000">
+              <input type="range" id="startRange" min="0" max="10000" value="0" aria-label="От">
+              <input type="range" id="endRange" min="0" max="10000" value="10000" aria-label="До">
             </div>
           </fieldset>
           <button class="accommodation-filter-apply" type="submit">Применить</button>
