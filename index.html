@@ -54,7 +54,7 @@
 
             <section class="hero" data-test="hero">
                 <h2 class="visually-hidden">Приглашение посетить Седону</h2>
-                <img class="hero-text" src="#" alt="Welcome to the gorgeous Sedona">
+                <img class="hero-text" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
             </section>
 
             <section class="advantages" data-test="advantages">
@@ -132,11 +132,11 @@
                 <h2 class="subscription-title">Подпишитесь на рассылку</h2>
                 <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!
                 </p>
-                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" id="subscriptionForm">
                     <label for="email" class="visually-hidden">Email</label>
                     <input class="email-field" placeholder="Ваш e-mail" type="email" id="email" name="email" required>
-                    <button class="subscription-button" type="submit">Подписаться</button>
                 </form>
+                <button class="subscription-button" type="submit" form="subscriptionForm">Подписаться</button>
             </section>
         </main>
 
