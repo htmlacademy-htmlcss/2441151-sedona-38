@@ -9,7 +9,7 @@
     <body>
         <header class="page-header" data-test="header">
             <a href="index.html" class="logo">
-                <img class="logo-image" src="#" alt="Логотип City of Sedona">
+                <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
             </a>
             <!-- Главная навигация -->
             <nav class="navigation">
@@ -179,7 +179,7 @@
                     <!-- 1 карточка -->
                     <li class="product-card">
                         <a href="#" class="product-card-link">
-                            <img class="product-card-image" src="#" alt="">
+                            <img class="product-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Окресности Amara Resort & Spa">
                             <h3 class="product-card-title">Amara Resort & Spa</h3>
                         </a>
 
@@ -199,7 +199,7 @@
                     <!-- 2 карточка -->
                     <li class="product-card">
                         <a href="#" class="product-card-link">
-                            <img class="product-card-image" src="#" alt="">
+                            <img class="product-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Окресности Villas at Poco Diablo">
                             <h3 class="product-card-title">Villas at Poco Diablo</h3>
                         </a>
 
@@ -219,7 +219,7 @@
                     <!-- 3 карточка -->
                     <li class="product-card">
                         <a href="#" class="product-card-link">
-                            <img class="product-card-image" src="#" alt="">
+                            <img class="product-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Окресности Desert Quail Inn">
                             <h3 class="product-card-title">Desert Quail Inn</h3>
                         </a>
 
@@ -239,7 +239,7 @@
                     <!-- 4 карточка -->
                     <li class="product-card">
                         <a href="#" class="product-card-link">
-                            <img class="product-card-image" src="#" alt="">
+                            <img class="product-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Окресности GreenTree Inn">
                             <h3 class="product-card-title">GreenTree Inn</h3>
                         </a>
 
@@ -285,11 +285,13 @@
                 <h2 class="subscription-title">Подпишитесь на рассылку</h2>
                 <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!
                 </p>
-                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post"
+                    id="subscriptionForm">
                     <label for="email" class="visually-hidden">Email</label>
                     <input class="email-field" placeholder="Ваш e-mail" type="email" id="email" name="email" required>
                     <button class="subscription-button" type="submit">Подписаться</button>
                 </form>
+                <button class="subscription-button" type="submit" form="subscriptionForm">Подписаться</button>
             </section>
         </main>
 
@@ -340,7 +342,8 @@
                 <section class="developer_contacts">
                     <h2 class="visually-hidden">Контакты разработчика сайта</h2>
                     <a class="developer_contacts_link" href="https://htmlacademy.ru/">
-                        <img class="developer_contacts_link_logo" src="#" alt="HTML Academy">
+                        <img class="developer_contacts_link_logo" src="images/dev_logo.svg" width="115" height="33"
+                            alt="HTML Academy">
                     </a>
                 </section>
 
