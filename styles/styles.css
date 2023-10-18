@@ -14,10 +14,233 @@
     font-display: swap;
 }
 
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 #00000033;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: black;
     background-color: #ffffff;
+}
+
+.page-header {
+    color: #000000;
+    background: #ffffff;
+}
+
+.navigation-list,
+.user-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.user-menu-item-button {
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("../images/hero-background.jpg");
+    background-color: #479db7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 485px;
+    text-align: center;
+    padding: 50px 50px 78px;
+    box-sizing: border-box;
+}
+
+.advantages-header-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 120% */
+    text-transform: uppercase;
+}
+
+.advantages-header-description {
+    font-size: 22px;
+    line-height: 26px;
+    /* 118.182% */
+    color: #333333;
+}
+
+.advantages-list {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-item-title {
+    font-size: 24px;
+    line-height: 28px;
+    /* 116.667% */
+    text-transform: uppercase;
+}
+
+.advantages-item-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 116.667% */
+    color: #333333;
+}
+
+.advantages-item {
+    background-color: #83B3D31F;
+}
+
+.advantages-item--pictured {
+    background-color: #82B3D3;
+}
+
+.advantages-item--pictured .advantages-item-description {
+    color: #ffffff;
+}
+
+.advantages-item--pictured .advantages-item-title {
+    color: #ffffff;
+}
+
+
+.advantages-item--middle {
+    background-color: #83B3D333;
+}
+
+.services {
+    text-align: center;
+}
+
+/* Вопрос: может лучше в разметке создавать классы не advantages-item-title,
+services-header-title, services-header-description...
+а такие: advantages-item title, services-header title, services-header description...
+и обращаться к ним как .advantages-item .title и т.д.? */
+
+/* .services-header .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+
+    text-transform: uppercase;
+}
+
+.services-header .description {
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #333333;
+} */
+
+.services-header-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 120% */
+    text-transform: uppercase;
+}
+
+.services-header-description {
+    font-size: 18px;
+    line-height: 21px;
+    /* 116.667% */
+    color: #333333;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-item--blue {
+    background-color: #83B3D31F;
+}
+
+.services-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    /* 116.667% */
+    text-transform: uppercase;
+}
+
+.services-item-description {
+    font-size: 18px;
+    line-height: 21px;
+    /* 116.667% */
+    color: #333333;
+}
+
+.hotel-search {
+    text-align: center;
+}
+
+.hotel-search-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 120% */
+    text-transform: uppercase;
+}
+
+.hotel-search-description {
+    font-size: 22px;
+    line-height: 26px;
+    /* 118.182% */
+    color: #333333;
+}
+
+
+
+.hotel-search-button {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 180% */
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756157;
+    border-radius: 4px;
+    padding: 8px 50px;
+    transition: background-color 0.2s ease;
+    vertical-align: middle;
+}
+
+.hotel-search-button:hover {
+    background-color: #615048;
 }
