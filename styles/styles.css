@@ -21,11 +21,92 @@
 /* Цвет привязать к порядковому номеру элемента (сервисы) */
 /* Transparent border? And try outline: -2px; */
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    background-color: #ffffff;
+}
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 0 15px 0 #00000033;
+    padding: 0;
+}
+
+.page-header {
+    color: #000000;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+}
+
+.logo-image {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-item {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu-item {
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu-item-button {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-search {
+    background-image: url("../images/site-search-icon.svg");
+    padding: 0;
+    margin: 0;
 }
 
 .visually-hidden {
@@ -41,49 +122,24 @@
     overflow: hidden;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
-    background-color: #ffffff;
-}
-
-.page-header {
-    color: #000000;
-    background: #ffffff;
-}
-
-.navigation-list,
-.user-menu {
-    list-style-type: none;
+.favourites {
     padding: 0;
     margin: 0;
 }
 
-.navigation-link {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.user-menu-item-button {
-    text-decoration: none;
+.favorites-count {
     padding: 0;
     margin: 0;
 }
 
-.site-search {
-    background-image: url("../images/site-search-icon.svg");
+.inquiry {
+    padding: 0;
+    margin: 0;
+}
 
+.main-index {
+    padding: 0;
+    margin: 0;
 }
 
 .hero {
@@ -95,6 +151,18 @@ body {
     text-align: center;
     padding: 50px 50px 78px;
     box-sizing: border-box;
+
+    margin: 0;
+}
+
+.advantages {
+    padding: 0;
+    margin: 0;
+}
+
+.advantages-header {
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-header-title {
@@ -103,6 +171,8 @@ body {
     line-height: 36px;
     /* 120% */
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-header-description {
@@ -110,6 +180,8 @@ body {
     line-height: 26px;
     /* 118.182% */
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-list {
@@ -119,11 +191,19 @@ body {
     margin: 0;
 }
 
+.advantages-item {
+    background-color: #83B3D31F;
+    padding: 0;
+    margin: 0;
+}
+
 .advantages-item-title {
     font-size: 24px;
     line-height: 28px;
     /* 116.667% */
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-item-description {
@@ -133,10 +213,13 @@ body {
     line-height: 21px;
     /* 116.667% */
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
 
-.advantages-item {
-    background-color: #83B3D31F;
+.advantages-item-picture {
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-item--pictured {
@@ -151,34 +234,20 @@ body {
     color: #ffffff;
 }
 
-
 .advantages-item--middle {
     background-color: #83B3D333;
 }
 
 .services {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-/* Вопрос: может лучше в разметке создавать классы не advantages-item-title,
-services-header-title, services-header-description...
-а такие: advantages-item title, services-header title, services-header description...
-и обращаться к ним как .advantages-item .title и т.д.? */
-
-/* .services-header .title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-
-    text-transform: uppercase;
+.services-header {
+    padding: 0;
+    margin: 0;
 }
-
-.services-header .description {
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #333333;
-} */
 
 .services-header-title {
     font-size: 30px;
@@ -186,6 +255,8 @@ services-header-title, services-header-description...
     line-height: 36px;
     /* 120% */
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 .services-header-description {
@@ -193,10 +264,17 @@ services-header-title, services-header-description...
     line-height: 21px;
     /* 116.667% */
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
 
 .services-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-item {
     padding: 0;
     margin: 0;
 }
@@ -211,6 +289,8 @@ services-header-title, services-header-description...
     line-height: 28px;
     /* 116.667% */
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 .services-item-description {
@@ -218,10 +298,14 @@ services-header-title, services-header-description...
     line-height: 21px;
     /* 116.667% */
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
 
 .hotel-search {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .hotel-search-title {
@@ -230,6 +314,8 @@ services-header-title, services-header-description...
     line-height: 36px;
     /* 120% */
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 .hotel-search-description {
@@ -237,9 +323,9 @@ services-header-title, services-header-description...
     line-height: 26px;
     /* 118.182% */
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
-
-
 
 .hotel-search-button {
     text-decoration: none;
@@ -255,8 +341,86 @@ services-header-title, services-header-description...
     padding: 8px 50px;
     transition: background-color 0.2s ease;
     vertical-align: middle;
+
+    margin: 0;
 }
 
 .hotel-search-button:hover {
     background-color: #615048;
+}
+
+.subscription {
+    padding: 0;
+    margin: 0;
+}
+
+.subscription-title {
+    padding: 0;
+    margin: 0;
+}
+
+.subscription-description {
+    padding: 0;
+    margin: 0;
+}
+
+.subscription-form {
+    padding: 0;
+    margin: 0;
+}
+
+.email-field {
+    padding: 0;
+    margin: 0;
+}
+
+.subscription-button {
+    padding: 0;
+    margin: 0;
+}
+
+.page-footer {
+    padding: 0;
+    margin: 0;
+}
+
+.socials {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.socials-item {
+    padding: 0;
+    margin: 0;
+}
+
+.socials-item-link {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts {
+    padding: 0;
+    margin: 0;
+}
+
+.contacts-phone {
+    padding: 0;
+    margin: 0;
+}
+
+.developer_contacts {
+    padding: 0;
+    margin: 0;
+}
+
+.developer_contacts_link {
+    padding: 0;
+    margin: 0;
+}
+
+.developer_contacts_link_logo {
+    padding: 0;
+    margin: 0;
 }
