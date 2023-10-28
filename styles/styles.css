@@ -438,7 +438,7 @@ margin: 0 auto;
   border-radius: 4px 0 0 4px;
   width: 445px;
   box-sizing: border-box;
-  min-height: 52px;
+  height: 52px;
 }
 
 .subscribe-button {
