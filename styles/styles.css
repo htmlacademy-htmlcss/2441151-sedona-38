@@ -26,6 +26,10 @@
 /* 3. Цвет привязать к порядковому номеру элемента (сервисы) */
 /* 4. Transparent border? And try outline: -2px; */
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,6 +38,8 @@ body {
   line-height: 21px;
   color: black;
   background-color: #f2f2f2;
+  min-height: 100%;
+  display: flex;
 }
 
 .visually-hidden {
@@ -55,6 +61,8 @@ body {
   padding: 0;
   background: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header {
@@ -168,6 +176,7 @@ body {
 .main-index {
   padding: 0;
   margin: 0;
+  flex-grow: 1;
 }
 
 .hero {
@@ -190,6 +199,7 @@ body {
 .advantages {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .advantages-header {
@@ -217,7 +227,6 @@ body {
 }
 
 .advantages-list {
-  text-align: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -236,6 +245,16 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+.advantages-item-divider {
+  padding: 0;
+  margin: 0 auto;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.30);
+  height: 2px;
+  width: 60px;
+  display: block;
 }
 
 .advantages-item-description {
@@ -264,6 +283,10 @@ body {
 
 .advantages-item--pictured .advantages-item-title {
   color: #ffffff;
+}
+
+.advantages-item--pictured .advantages-item-divider {
+  background-color: rgba(255, 255, 255, 0.30);
 }
 
 .advantages-item--middle {
@@ -464,7 +487,7 @@ body {
 .page-footer {
   padding: 40px 70px 30px;
   margin: 0;
-  display: inline-flex;
+  display: flex;
   height: 120px;
   width: 100%;
   box-sizing: border-box;
@@ -525,6 +548,7 @@ body {
 .main-inner {
   margin: 0;
   padding: 0;
+  flex-grow: 1;
 }
 
 .filter {
@@ -735,7 +759,7 @@ body {
   box-sizing: border-box;
   border: solid #e6e6e6 1px;
   border-radius: 4px;
-  height: 438px;
+  min-height: 438px;
   width: 340px;
 }
 
@@ -780,9 +804,7 @@ body {
   padding: 0;
 }
 
-.product-buttons{
-
-}
+.product-buttons {}
 
 .product-button {
   display: inline-block;
