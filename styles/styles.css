@@ -15,14 +15,12 @@
 }
 
 /* Вопросы: */
-/* 2. Поле ввода e-mail и кнопка */
-/* 4. Центровка текста по вертикали в "кнопках"(ссылках) с фиксированным размером с помощью line-height */
+/* 1. Центровка текста по вертикали в "кнопках"(ссылках) с фиксированным размером с помощью line-height */
 
 /* Заметки */
-/* 1. Липкий футер: flex-grow="1" */
-/* 2. 32 min: итог */
-/* 3. Цвет привязать к порядковому номеру элемента (сервисы) */
-/* 4. Transparent border? And try outline: -2px; */
+/* 1. 32 min: итог */
+/* 2. Цвет привязать к порядковому номеру элемента (сервисы) */
+/* 3. Transparent border? And try outline: -2px; */
 
 /* Переполнения! Ограничить ширину + перенос + flex-start */
 /* Убрать <br> */
@@ -32,7 +30,7 @@
 /* Заинтересовались? В секцию, без контейнера. */
 /* Телефон переносится по строкам. */
 /* Пагинация: переполнение + паддинги + бордер-бокс */
-/* Стилизация галочек и радио в конце видео от 06.11.23 */
+/* Стилизация галочек и радио в конце видео от 06 .11.23 */
 
 html {
   height: 100%;
@@ -80,22 +78,22 @@ body {
   padding: 0 70px;
   width: 1060px;
   margin: 0 auto;
+  position: relative;
 }
 
 .logo {
   padding: 0;
   margin: 0;
   display: block;
-  position: relative;
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0; */
+  left: 70px;
 }
 
 .logo-image {
   padding: 0;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .navigation {
@@ -103,6 +101,7 @@ body {
   margin: 0 auto 0 168px;
   display: flex;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .navigation-list {
@@ -110,12 +109,14 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .navigation-item {
   padding: 0;
   margin: 0;
-
 }
 
 .navigation-link {
@@ -138,17 +139,15 @@ body {
   background-color: #f2f2f2;
 }
 
-.navigation-link--current {
-
-}
+.navigation-link--current {}
 
 .user-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: auto;
+  /* margin-left: auto; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .user-menu-item {
@@ -254,7 +253,8 @@ body {
 
 .advantages-header {
   padding: 69px 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 700px;
 }
 
 .advantages-header-title {
@@ -345,6 +345,8 @@ body {
 .advantages-item-picture {
   padding: 0;
   margin: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -527,9 +529,10 @@ body {
 }
 
 .subscribe-form {
-  display: inline-block;
   padding: 0;
   margin: 0;
+  display: flex;
+  width: 684px;
 }
 
 .subscribe-theme-custom {
@@ -548,29 +551,28 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  /* 133.333% */
   vertical-align: middle;
   text-align: left;
   border-width: 0;
   border-color: transparent;
   border-radius: 4px 0 0 4px;
-  width: 445px;
+  width: 452px;
   box-sizing: border-box;
-  height: 52px;
-  background-color: #F2F2F2;
+  min-height: 52px;
+  background-color: #f2f2f2;
 }
 
 .subscribe-button {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  /* 180% */
   background-color: #82B3D3;
   border-width: 0;
   border-radius: 0 4px 4px 0;
   font-family: inherit;
   box-sizing: border-box;
-  height: 52px;
+  min-height: 52px;
+  width: 232px;
 }
 
 .subscribe-button:hover {
@@ -1003,16 +1005,17 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
-  /* 180% */
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
   border-radius: 4px;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   transition: background-color 0.2s ease;
   text-align: center;
   margin: 0;
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
 .pagination-link--current {
