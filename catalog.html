@@ -67,53 +67,53 @@
         <h1 class="visually-hidden">Город Седона - Каталог</h1>
 
         <section class="filter" data-test="filter">
-          <div class="filter-container">
-            <header class="filter-header">
-              <h2 class="filter-title">Гостиницы Седоны</h2>
-              <!-- Хлебные крошки -->
-              <ol class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">
-                    <span class="visually-hidden">Главная</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                      <path
-                        d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                        fill="white" />
-                      <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
-                    </svg>
-                  </a>
-                </li>
-                <li class="breadcrumbs-divider">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
+          <header class="filter-header">
+            <h2 class="filter-title">Гостиницы Седоны</h2>
+            <!-- Хлебные крошки -->
+            <ol class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                     <path
-                      d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
                       fill="white" />
+                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
                   </svg>
-                </li>
-                <li class="breadcrumbs-item active" aria-current="page">Гостиницы</li>
-              </ol>
-            </header>
-            <!-- Форма фильтра -->
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <!-- Набор полей №1 -->
+                </a>
+              </li>
+              <li class="breadcrumbs-divider">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
+                  <path
+                    d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"
+                    fill="white" />
+                </svg>
+              </li>
+              <li class="breadcrumbs-item active" aria-current="page">Гостиницы</li>
+            </ol>
+          </header>
+          <!-- Форма фильтра -->
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <!-- Набор полей №1 -->
+            <div class="filter-form-left-part">
               <fieldset class="filter-fieldset">
                 <legend class="filter-fieldset-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-list-item">
-                    <label class="control">
-                      <input type="checkbox" class="control-input" name="pool" checked>
+                    <label class="filter-option">
+                      <input type="checkbox" class="filter-option-input" name="pool" checked>
                       Бассейн
                     </label>
                   </li>
                   <li class="filter-list-item">
-                    <label class="control">
-                      <input type="checkbox" class="control-input" name="parking" checked>
+                    <label class="filter-option">
+                      <input type="checkbox" class="filter-option-input" name="parking" checked>
                       Парковка
                     </label>
                   </li>
                   <li class="filter-list-item">
-                    <label class="control">
-                      <input type="checkbox" class="control-input" name="wi-fi">
+                    <label class="filter-option">
+                      <input type="checkbox" class="filter-option-input" name="wi-fi">
                       Wi-Fi
                     </label>
                   </li>
@@ -124,47 +124,57 @@
                 <legend class="filter-fieldset-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-list-item">
-                    <label class="control">
-                      <input type="radio" class="control-input" name="house-type" value="hotel" checked>
+                    <label class="filter-option">
+                      <input type="radio" class="filter-option-input" name="house-type" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
                   <li class="filter-list-item">
-                    <label class="control">
-                      <input type="radio" class="control-input" name="house-type" value="motel">
+                    <label class="filter-option">
+                      <input type="radio" class="filter-option-input" name="house-type" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="filter-list-item">
-                    <label class="control">
-                      <input type="radio" class="control-input" name="house-type" value="Apartment">
+                    <label class="filter-option">
+                      <input type="radio" class="filter-option-input" name="house-type" value="Apartment">
                       Апартаменты
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <!-- Набор полей №3 -->
-              <fieldset class="filter-fieldset">
-                <legend class="filter-fieldset-title">Стоимость, ₽:</legend>
-                <label for="start" class="range">
-                  <input type="number" id="start" class="range-input" name="start" min="0" max="10000" placeholder="0"
-                    value="0">
-                  <span class="input-text-right">От</span>
-                </label>
-                <label for="end" class="range">
-                  <input type="number" id="end" class="range-input" name="end" min="0" max="10000" placeholder="10000"
-                    value="9000">
-                  <span class="input-text-right">До</span>
-                </label>
-                <div class="ranges">
-                  <input type="range" id="startRange" min="0" max="10000" value="0" aria-label="От">
-                  <input type="range" id="endRange" min="0" max="10000" value="9000" aria-label="До">
-                </div>
-              </fieldset>
-              <button class="filter-apply" type="submit">Применить</button>
-              <button class="filter-reset" type="reset">Сбросить</button>
-            </form>
-          </div>
+            </div>
+            <!-- Набор полей №3 -->
+            <div class="filter-form-right-part">
+              <div class="filter-price-section">
+                <fieldset class="filter-fieldset">
+                  <legend class="filter-fieldset-title">Стоимость, ₽:</legend>
+                  <div class="filter-price-inputs-section">
+                    <div class="filter-price-input-number-section">
+                      <label for="start" class="range">
+                        <input type="number" id="start" class="range-input" name="start" min="0" max="10000"
+                          placeholder="0" value="0">
+                        <span class="input-text-right">От</span>
+                      </label>
+                      <label for="end" class="range">
+                        <input type="number" id="end" class="range-input" name="end" min="0" max="10000"
+                          placeholder="10000" value="9000">
+                        <span class="input-text-right">До</span>
+                      </label>
+                    </div>
+                    <div class="filter-price-input-slider-section">
+                      <input type="range" id="startRange" min="0" max="10000" value="0" aria-label="От">
+                      <input type="range" id="endRange" min="0" max="10000" value="9000" aria-label="До">
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="filter-buttons-section">
+                <button class="button-basic filter-apply-button" type="submit">Применить</button>
+                <button class="button-basic filter-reset-button" type="reset">Сбросить</button>
+              </div>
+            </div>
+          </form>
         </section>
         <!-- Вывод результатов -->
         <section class="results" data-test="catalog">

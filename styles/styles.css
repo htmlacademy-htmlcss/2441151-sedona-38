@@ -200,15 +200,16 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  /* 180% */
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
+  border: none;
   border-radius: 4px;
   padding: 8px 50px;
   transition: background-color 0.2s ease;
   vertical-align: middle;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .button-basic:hover {
@@ -218,8 +219,9 @@ body {
 .inquiry-button {
   padding: 8px 34px;
   margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
   width: 160px;
-  box-sizing: border-box;
 }
 
 .main-index {
@@ -392,7 +394,6 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .services-header-description {
@@ -673,19 +674,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 412px;
-
-}
-
-.filter-container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  height: inherit;
+  width: 1200px;
 }
 
 .filter-header {
   margin: 0 0 40px 0;
   padding: 0;
-
 }
 
 .filter-title {
@@ -700,9 +695,10 @@ body {
 
 .breadcrumbs {
   margin: 0;
+  margin-top: 8px;
   padding: 0;
   list-style: none;
-  display: inline-flex;
+  display: flex;
   gap: 10px;
 }
 
@@ -713,7 +709,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-  /* 131.25% */
 }
 
 .breadcrumbs-link {
@@ -734,37 +729,100 @@ body {
 .filter-form {
   margin: 0;
   padding: 0;
-  display: inline-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.filter-form-left-part {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.filter-form-right-part {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 70px;
+}
+
+.filter-price-section {}
+
+.filter-price-inputs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.filter-price-input-number-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.filter-price-input-slider-section {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-buttons-section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .filter-fieldset {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .filter-fieldset-title {
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 .filter-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .filter-list-item {
   margin: 0;
   padding: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
 }
 
-.control {
+.filter-option {
   margin: 0;
   padding: 0;
 }
 
-.control-input {
+.filter-option-input {
   margin: 0;
+  margin-right: 16px;
   padding: 0;
 }
 
@@ -783,19 +841,17 @@ body {
   padding: 0;
 }
 
-.ranges {
-  margin: 0;
-  padding: 0;
+.filter-apply-button {
+  /* width: 191px; */
+  font-family: inherit;
+  align-self: stretch;
+  background-color: #82B3D3;
 }
 
-.filter-apply {
-  margin: 0;
-  padding: 0;
-}
-
-.filter-reset {
-  margin: 0;
-  padding: 0;
+.filter-reset-button {
+  font-family: inherit;
+  align-self: stretch;
+  background-color: transparent;
 }
 
 .results {
