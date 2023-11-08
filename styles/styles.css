@@ -863,10 +863,16 @@ body {
 .results-header {
   margin: 0 0 40px;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-header-title {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  /* 120% */
   text-transform: uppercase;
 }
 
@@ -874,6 +880,10 @@ body {
   margin: 0;
   padding: 0;
 
+}
+
+.view-settings-container {
+display: flex;
 }
 
 .results-sorting {
