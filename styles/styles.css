@@ -33,6 +33,7 @@
 /* Стилизация галочек и радио в конце видео от 06 .11.23 */
 
 html {
+  margin: 0;
   height: 100%;
 }
 
@@ -43,9 +44,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: black;
-  min-height: 100%;
-  display: flex;
-  box-sizing: border-box;
+  height: 100%;
+  /* box-sizing: border-box; */
   background-color: #f2f2f2;
 }
 
@@ -70,6 +70,7 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-header {
@@ -98,9 +99,9 @@ body {
 
 .navigation {
   /* padding: 0 70px 0 238px; */
+  padding: 0;
   margin: 0 auto 0 168px;
   display: flex;
-  box-sizing: border-box;
   justify-content: space-between;
 }
 
@@ -112,6 +113,7 @@ body {
   width: 500px;
   flex-wrap: wrap;
   align-items: flex-start;
+  align-content: flex-start;
 }
 
 .navigation-item {
@@ -147,7 +149,11 @@ body {
   margin: 0;
   /* margin-left: auto; */
   display: flex;
+  justify-content: flex-end;
   align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 392px;
 }
 
 .user-menu-item {
@@ -586,7 +592,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 120px;
+  min-height: 120px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -638,8 +644,9 @@ body {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
-  /* 100% */
   text-transform: uppercase;
+  display: block;
+  width: 331px;
 }
 
 .developer_contacts {
@@ -883,7 +890,7 @@ body {
 }
 
 .view-settings-container {
-display: flex;
+  display: flex;
 }
 
 .results-sorting {
@@ -927,7 +934,7 @@ display: flex;
   margin: 0 0 40px 0;
   padding: 0;
   list-style: none;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
