@@ -102,18 +102,20 @@ body {
   padding: 0;
   margin: 0 auto 0 168px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .navigation-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  /* margin-left: auto; */
   display: flex;
-  width: 500px;
+  min-width: 340px;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
+  flex-grow: 1;
 }
 
 .navigation-item {
@@ -153,7 +155,9 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 392px;
+  min-width: 270px;
+  flex-grow: 1;
+
 }
 
 .user-menu-item {
@@ -240,8 +244,8 @@ body {
   background-color: #8daab8;
   background-image: url("../images/index-background-divider.svg"), url("../images/hero-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
-  background-position: center bottom, center center;
+  background-size: 100%, cover;
+  background-position: center bottom, center top;
   min-height: 485px;
   padding: 50px 50px 78px;
   box-sizing: border-box;
@@ -371,7 +375,7 @@ body {
   background-color: rgba(255, 255, 255, 0.30);
 }
 
-.advantages-item--middle {
+.advantages-item:nth-of-type(3n) {
   background-color: #83B3D333;
 }
 
@@ -416,6 +420,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -432,7 +437,7 @@ body {
   box-sizing: border-box;
 }
 
-.services-item--blue {
+.services-item:nth-of-type(2n+1) {
   background-color: #83B3D31F;
 }
 
