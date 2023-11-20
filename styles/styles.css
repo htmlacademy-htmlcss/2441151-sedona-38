@@ -33,6 +33,7 @@
 /* Стилизация галочек и радио в конце видео от 06 .11.23 */
 
 html {
+  margin: 0;
   height: 100%;
 }
 
@@ -43,9 +44,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: black;
-  min-height: 100%;
-  display: flex;
-  box-sizing: border-box;
+  height: 100%;
+  /* box-sizing: border-box; */
   background-color: #f2f2f2;
 }
 
@@ -70,6 +70,7 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-header {
@@ -98,20 +99,23 @@ body {
 
 .navigation {
   /* padding: 0 70px 0 238px; */
+  padding: 0;
   margin: 0 auto 0 168px;
   display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .navigation-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  /* margin-left: auto; */
   display: flex;
-  width: 500px;
+  min-width: 340px;
   flex-wrap: wrap;
   align-items: flex-start;
+  align-content: flex-start;
+  flex-grow: 1;
 }
 
 .navigation-item {
@@ -147,7 +151,13 @@ body {
   margin: 0;
   /* margin-left: auto; */
   display: flex;
+  justify-content: flex-end;
   align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  min-width: 270px;
+  flex-grow: 1;
+
 }
 
 .user-menu-item {
@@ -234,8 +244,8 @@ body {
   background-color: #8daab8;
   background-image: url("../images/index-background-divider.svg"), url("../images/hero-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
-  background-position: center bottom, center center;
+  background-size: 100%, cover;
+  background-position: center bottom, center top;
   min-height: 485px;
   padding: 50px 50px 78px;
   box-sizing: border-box;
@@ -365,7 +375,7 @@ body {
   background-color: rgba(255, 255, 255, 0.30);
 }
 
-.advantages-item--middle {
+.advantages-item:nth-of-type(3n) {
   background-color: #83B3D333;
 }
 
@@ -410,6 +420,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item {
@@ -426,7 +437,7 @@ body {
   box-sizing: border-box;
 }
 
-.services-item--blue {
+.services-item:nth-of-type(2n+1) {
   background-color: #83B3D31F;
 }
 
@@ -586,7 +597,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 120px;
+  min-height: 120px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -614,6 +625,7 @@ body {
   padding: 0 10px;
   margin: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 40px;
   box-sizing: border-box;
@@ -638,8 +650,9 @@ body {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
-  /* 100% */
   text-transform: uppercase;
+  display: block;
+  width: 331px;
 }
 
 .developer_contacts {
@@ -732,6 +745,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  min-height: 160px;
 }
 
 .filter-form-left-part {
@@ -739,7 +753,6 @@ body {
   padding: 0;
   display: flex;
   align-items: flex-start;
-  gap: 70px;
 }
 
 .filter-form-right-part {
@@ -777,13 +790,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  justify-content: space-between;
 }
 
 .filter-fieldset {
   margin: 0;
   padding: 0;
   border: none;
+  margin-right: 71px;
+}
+
+.filter-fieldset:last-of-type {
+  margin-right: 0;
 }
 
 .filter-fieldset-title {
@@ -822,7 +840,7 @@ body {
 
 .filter-option-input {
   margin: 0;
-  margin-right: 16px;
+  margin-right: 18px;
   padding: 0;
 }
 
@@ -846,6 +864,7 @@ body {
   font-family: inherit;
   align-self: stretch;
   background-color: #82B3D3;
+  margin-bottom: 32px;
 }
 
 .filter-reset-button {
@@ -857,7 +876,7 @@ body {
 .results {
   margin: 0;
   padding: 50px 70px 60px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .results-header {
@@ -865,6 +884,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .results-header-title {
@@ -883,20 +903,26 @@ body {
 }
 
 .view-settings-container {
-display: flex;
+  display: flex;
 }
 
 .results-sorting {
   margin: 0 70px 0 0;
-  padding: 0;
-
+  padding: 14px 20px;
+  width: 292px;
+  height: 49px;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+  /* box-sizing: border-box; */
 }
 
 .view-mode-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: inline-flex;
+  display: flex;
   gap: 8px;
 }
 
@@ -910,6 +936,11 @@ display: flex;
   padding: 14px 12px;
   border: #E5E5E5 solid 2px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
   box-sizing: border-box;
 }
 
@@ -924,22 +955,30 @@ display: flex;
 }
 
 .product-list {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
   padding: 0;
   list-style: none;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .product-card {
   margin: 0;
+  margin-right: 20px;
+  margin-bottom: 19px;
   padding: 20px;
   box-sizing: border-box;
   border: solid #e6e6e6 1px;
   border-radius: 4px;
   min-height: 438px;
   width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-card:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .product-card-link {
@@ -951,24 +990,29 @@ display: flex;
 }
 
 .product-card-image {
-  margin: 0 0 16px;
+  margin: 0;
+  margin-bottom: 11px;
   padding: 0;
+  object-fit: cover;
+
 }
 
 .product-card-title {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  /* 116.667% */
-  display: inline;
 }
 
 .product-type-and-price {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   color: #333333;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-type {
@@ -983,19 +1027,30 @@ display: flex;
   padding: 0;
 }
 
-.product-buttons {}
+.product-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
 
 .product-button {
-  display: inline-block;
+  padding: 8px 26px;
+  width: 140px;
 }
 
 .product-button-favorites {
   background-color: #82B3D3;
-  display: inline-block;
+  padding: 8px 20px;
+  width: 140px;
 }
 
 .product-button-favorites:hover {
   background-color: #68A2CA;
+}
+
+.product-rating-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .stars {
@@ -1029,6 +1084,7 @@ display: flex;
 
 .favourite-item {
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .favourite-item:hover {
@@ -1046,6 +1102,8 @@ display: flex;
 }
 
 .pagination-divider {
+  margin: 0;
+  padding: 0;
   border: none;
   background-color: #E6E6E6;
   height: 1px;
