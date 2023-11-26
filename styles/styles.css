@@ -984,27 +984,32 @@ body {
   margin-right: 0;
 } */
 
-.product-card-link {}
 
-.product-card-image {
+.product-card-image-link {
   display: flex;
   /* align-items: center; */
   grid-column: 1 / -1;
 }
 
-.product-card-image-file {
+.product-card-image {
   object-fit: cover;
+}
+
+.product-card-title-link {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  text-decoration: none;
+  grid-column: 1 / -1;
 }
 
 .product-card-title {
   margin: 0;
   padding: 0;
-  color: #000000;
   text-decoration: none;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  grid-column: 1 / -1;
 }
 
 
